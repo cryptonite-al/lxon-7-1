@@ -1,15 +1,15 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { motion } from "framer-motion";
 import { ArrowRight, Play, Film, Video, Clapperboard, Palette, Check } from "lucide-react";
-import heroVideo from "@/assets/hero-loop.mp4.asset.json";
-import creatorVideo from "@/assets/creator-loop.mp4.asset.json";
+import heroVideo from "@/assets/hero-loop.mp4";
+import creatorVideo from "@/assets/creator-loop.mp4";
 import p2 from "@/assets/poster-void-whisper.jpg";
 import p3 from "@/assets/poster-ocular-link.jpg";
 import p4 from "@/assets/poster-canvas-zero.jpg";
 import p5 from "@/assets/poster-crimson-orbit.jpg";
 import p6 from "@/assets/poster-lumen-city.jpg";
 import p1 from "@/assets/poster-neon-revenant.jpg";
-import rainbowCity from "@/assets/rainbow-city-full.jpg.asset.json";
+import rainbowCity from "@/assets/rainbow-city.jpeg";
 import { Reveal } from "@/components/site/Reveal";
 import { FeaturedSlider } from "@/components/site/FeaturedSlider";
 import { WATCH_URL } from "@/lib/links";
@@ -26,7 +26,7 @@ const categories = [
 ];
 
 const trending = [
-  { img: rainbowCity.url, tag: "AI Miniseries", title: "Rainbow City", by: "LXON-7 Originals" },
+  { img: rainbowCity, tag: "AI Miniseries", title: "Rainbow City", by: "LXON-7 Originals" },
   { img: p1, tag: "Cyber-Thriller", title: "Neon Revenant", by: "Synthia-04" },
   { img: p2, tag: "Sci-Fi Drama", title: "Void Whisper", by: "Orbital AI" },
   { img: p3, tag: "Mini Series", title: "Ocular Link", by: "NeuralVision" },
@@ -42,7 +42,7 @@ function Index() {
       <section className="relative min-h-[100svh] overflow-hidden pt-20">
         <div className="absolute inset-0 -z-10">
           <video
-            src={heroVideo.url}
+            src={heroVideo}
             autoPlay
             muted
             loop
@@ -234,7 +234,7 @@ function Index() {
             <Reveal>
               <div className="relative aspect-square">
                 <video
-                  src={creatorVideo.url}
+                  src={creatorVideo}
                   autoPlay
                   muted
                   loop

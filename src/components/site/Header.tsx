@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { Link } from "@tanstack/react-router";
-import logoAsset from "@/assets/lxon7-logo-v3.png.asset.json";
+import logoAsset from "@/assets/lxon-logo.png";
 import { WATCH_URL } from "@/lib/links";
 
 const NAV = [
@@ -20,7 +20,7 @@ export function Header() {
       <div className="mx-auto flex h-20 max-w-7xl items-center justify-between gap-4 px-4 md:h-24 md:px-8">
         <Link to="/" className="flex min-w-0 shrink-0 items-center" aria-label="LXON-7 home">
           <img
-            src={logoAsset.url}
+            src={logoAsset}
             alt="LXON-7 — AI Streaming Service"
             className="h-[58px] w-auto max-w-[140px] object-contain md:h-[66px] md:max-w-[160px]"
             style={{ mixBlendMode: "screen", filter: "drop-shadow(0 0 18px oklch(0.62 0.24 295 / 0.5))" }}

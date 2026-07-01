@@ -1,4 +1,4 @@
-import logoAsset from "@/assets/lxon7-logo-v3.png.asset.json";
+import logoAsset from "@/assets/lxon-logo.png";
 import { WATCH_URL } from "@/lib/links";
 
 const cols = [
@@ -34,7 +34,7 @@ export function Footer() {
         <div className="grid gap-14 lg:grid-cols-[1.2fr_1fr_1fr_1.1fr]">
           <div className="max-w-sm">
             <img
-              src={logoAsset.url}
+              src={logoAsset}
               alt="LXON-7"
               className="mb-6 h-20 w-auto max-w-[180px] object-contain md:h-24 md:max-w-[210px]"
               style={{ mixBlendMode: "screen", filter: "drop-shadow(0 0 20px oklch(0.62 0.24 295 / 0.5))" }}

@@ -3,8 +3,8 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Play } from "lucide-react";
 import { Reveal } from "@/components/site/Reveal";
 import { WATCH_URL } from "@/lib/links";
-import aiFace from "@/assets/ai-face.png.asset.json";
-import rainbowCity from "@/assets/rainbow-city-full.jpg.asset.json";
+import aiFace from "@/assets/ai-face.png";
+import rainbowCity from "@/assets/rainbow-city.jpeg";
 
 type Slide = {
   kicker: string;
@@ -22,7 +22,7 @@ const SLIDES: Slide[] = [
     title: "Rainbow City",
     synopsis:
       "One family. Four stories. A lifetime of choices. A miniseries about love, choices, and adversity — where every choice has a consequence, and every heart has a story.",
-    image: rainbowCity.url,
+    image: rainbowCity,
     cta: "Watch Trailer",
   },
   {
@@ -31,7 +31,7 @@ const SLIDES: Slide[] = [
     title: "The Dawn of Synthetic Cinema",
     synopsis:
       "A neural-rendered odyssey through the orbital archives. Directed by NOVA-13 — exclusive premiere on LXON-7.",
-    image: aiFace.url,
+    image: aiFace,
     cta: "Watch Trailer",
   },
 ];
